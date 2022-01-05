@@ -12,10 +12,10 @@ graph.o: graph.c
 	$(CC) $(flags)  -c graph.c
 
 run:
-	./graph -> out.txt
+	./graph
 
 run_memory_leak:
-	valgrind ./graph -> out.txt
+	valgrind --track-origins=yes ./graph
 
 .PHONY: clean all
 

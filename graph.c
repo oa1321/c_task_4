@@ -289,8 +289,8 @@ void shortsPath_cmd(pnode head){
     /*
     calc the shortest path using dikjstra algorithem for shortest path
     */
-    int *dist = (int*)malloc(sizeof(int)*max_index + 1);
-    int *visited = (int*)malloc(sizeof(int)*max_index + 1);
+    int *dist = (int*)malloc(sizeof(int)*(max_index + 1));
+    int *visited = (int*)malloc(sizeof(int)*(max_index + 1));
     queue =  (pnode*)malloc(sizeof(node)*g_size*2);
     int first = 0;
     int last = 0;
@@ -371,8 +371,8 @@ int SP_with_index(pnode head, int from_node, int to_node){
         /*
     calc the shortest path using dikjstra algorithem for shortest path
     */
-    int *dist = (int*)malloc(sizeof(int)*max_index + 1);
-    int *visited = (int*)malloc(sizeof(int)*max_index + 1);
+    int *dist = (int*)malloc(sizeof(int)*(max_index + 1));
+    int *visited = (int*)malloc(sizeof(int)*(max_index + 1));
     queue =  (pnode*)malloc(sizeof(node)*g_size*2);
     int first = 0;
     int last = 0;
